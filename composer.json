@@ -1,6 +1,6 @@
 {
-    "name": "felixdorn/:name",
-    "description": ":description",
+    "name": "felixdorn/laravel-microsearch",
+    "description": "laravel-microsearch",
     "license": "MIT",
     "authors": [
         {
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Felix\\:namespace\\": "src/"
+            "Felix\\LaravelMicrosearch\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Felix\\:namespace\\Tests\\": "tests/"
+            "Felix\\LaravelMicrosearch\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
