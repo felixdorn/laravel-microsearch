@@ -1,0 +1,21 @@
+on: ['push', 'pull_request']
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    name: Formats
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1
+        with:
+          path: ~/.composer/cache/files
+          key: dependencies-php-8.3-composer-${{ hashFiles('composer.json') }}
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          extensions: dom, mbstring, zip
+          tools: prestissimo
+          coverage: pcov
+      - run: composer update --prefer-stable --no-interaction --prefer-dist
+      - run: composer test:lint
+      - run: composer test:types
