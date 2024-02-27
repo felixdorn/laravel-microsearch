@@ -1,4 +1,4 @@
-# laravel-microsearch for Laravel                 
+# Microsearch for Laravel                 
 
 [![Tests](https://github.com/felixdorn/laravel-microsearch/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/felixdorn/laravel-microsearch/actions/workflows/tests.yml)
 [![Formats](https://github.com/felixdorn/laravel-microsearch/actions/workflows/formats.yml/badge.svg?branch=master)](https://github.com/felixdorn/laravel-microsearch/actions/workflows/formats.yml)
@@ -24,4 +24,4 @@ composer require felixdorn/laravel-microsearch
 composer test
 ```
 
-**laravel-microsearch** was created by **[Félix Dorn](https://felixdorn.fr)** under the **[MIT license](https://opensource.org/licenses/MIT)**.
+**Microsearch** was created by **[Félix Dorn](https://felixdorn.fr)** under the **[MIT license](https://opensource.org/licenses/MIT)**.
